@@ -1,4 +1,4 @@
-import NavBar from './NavBar'
+import Navbar from './Navbar'
 import MetaData from './MetaData'
 import styles from '../styles/Layout.module.css'
 import Footer from './Footer'
@@ -7,13 +7,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <MetaData />
-      <NavBar />
-      <div className={styles.container}>
+      <Navbar />
         <main className={styles.main}>
           {children}
         </main>
-        <Footer/>
-      </div>
+      <Footer/>
     </>
   )
 }
