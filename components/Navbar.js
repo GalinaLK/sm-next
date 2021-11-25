@@ -1,6 +1,7 @@
 import React from 'react'
 import navStyles from '../styles/Navbar.module.css'
-import { faFaceRelieved } from '@fortawesome/pro-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Navbar = () => {
@@ -13,7 +14,7 @@ const Navbar = () => {
            <input type="search" name="q" placeholder="Search query"/>
            <input type="submit" value="Go!"/>
          </form>
-         <button><FontAwesomeIcon icon={faFaceRelieved} /></button>
+         <button><FontAwesomeIcon icon={faBars} /></button>
        </div>
        <div className={navStyles.links}>
          <a href="#news">friends</a>
