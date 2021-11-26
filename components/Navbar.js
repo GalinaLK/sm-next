@@ -9,17 +9,24 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 const Navbar = () => {
 
   const [open, setOpen] = useState(false);
+  const [linksClasses, setlinksClasses] = useState(navStyles.links);
+
+  //let linksClasses = null;
 
   function toggleNavg() {
-    //const btn = document.getElementById('toggleNav')
-    //const nav = document.getElementById('menu')
-   if(open){
+    const nav = document.getElementById('navLinks')
+    nav.classList.toggle('hidden')
+    const classes = open
+    ? `${navStyles.hidden} ${navStyles.links}`
+    : navStyles.links;
+    setlinksClasses(classes)
+console.log(linksClasses)
+
+    if(open){
      setOpen(false)
    } else {
      setOpen(true)
    }
-    //btn.classList.toggle('open')
-    //nav.classList.toggle('hidden')
     //document.body.classList.toggle('no-scroll')
   }
 
@@ -35,9 +42,8 @@ const Navbar = () => {
          <button id="toggleNav" onClick={toggleNavg}>
            <FontAwesomeIcon icon={open ? faTimes : faBars} />
          </button>
-
        </div>
-       <div className={navStyles.links}>
+       <div id="navLinks" className={linksClasses}>
          <a href="#news">friends</a>
          <a href="#news">messages</a>
          <a href="#news">notifications</a>

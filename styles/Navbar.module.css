@@ -26,6 +26,9 @@ width: 100%;
   align-items: center;
   justify-content: space-between;
  }
+.hidden{
+   display: none;
+ }
   /* Navbar links */
   .navbar a {
     display: block;
