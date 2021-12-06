@@ -54,3 +54,22 @@ width: 100%;
   .sticky + .content {
     padding-top: 60px;
   }
+
+  @media (min-width: 700px) {
+    .togleNav {
+     display: none; 
+   }
+   .navbar{
+     flex-direction: row;
+     }
+   .hidden{
+     display: initial;
+   }
+   .links{
+     display: flex;
+     flex-direction: row;
+   }
+   .home_nav{
+     width: initial;
+   }
+  }

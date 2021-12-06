@@ -18,7 +18,6 @@ const Navbar = () => {
     ? `${navStyles.hidden} ${navStyles.links}`
     : navStyles.links;
     setlinksClasses(classes)
-console.log(linksClasses)
 
     if(open){
      setOpen(false)
@@ -36,7 +35,7 @@ console.log(linksClasses)
            <input type="search" name="q" placeholder="Search query"/>
            <input type="submit" value="Go!"/>
          </form>
-         <button id="toggleNav" onClick={toggleNavg}>
+         <button id="toggleNav" className={navStyles.togleNav} onClick={toggleNavg}>
            <FontAwesomeIcon icon={open ? faTimes : faBars} />
          </button>
        </div>
