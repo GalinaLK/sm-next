@@ -43,7 +43,7 @@ const Navbar = () => {
          <a href="#news">friends</a>
          <a href="#news">messages</a>
          <a href="#news">notifications</a>
-         <a href="#contact">setings</a>
+         <a href="#contact">settings</a>
        </div>
      </nav> 
      </div>
